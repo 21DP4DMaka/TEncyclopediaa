@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Регистрация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3b3a3a; /* Изменено на темный цвет фона */
+            margin: 0;
+            padding: 0;
+            color: #fff; /* Изменено на белый цвет текста */
+        }
+
+        .header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #444;
+            border-radius: 3px;
+            background-color: #555;
+            color: #fff;
+        }
+
+        .btn {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .btn-forgot {
+            font-size: 12px;
+            text-decoration: none;
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        </style>
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+            <h1>Hi :></h1>
+        </div>
+        <div class="container">
+            <h2>Registration</h2>
+            <form action="#" method="post" id="registrationForm">
+                <input type="text" name="username" placeholder="Login" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <div class="login-link">
+                Already have an account? <a href="login.html">Login</a>
+            </div>
+        </div>
+        <button class="btn" id="backToIndex">Back</button>
+        <div class="footer">
+            &copy;  lu4shij sait 2k23.
+        </div>
+    </div>
+
+    <!-- Добавьте следующий скрипт внизу страницы -->
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Предотвращаем отправку формы по умолчанию
+    
+            // Получаем значения полей формы
+            var username = document.getElementsByName('username')[0].value;
+            var password = document.getElementsByName('password')[0].value;
+            // Сохраняем значения полей в localStorage
+            localStorage.setItem('username', username);
+            localStorage.setItem('password', password);
+
+    
+            // Перенаправляем пользователя на соответствующую версию index.html
+            window.location.href = 'home.html';
+        });
+
+// Обработчик события для кнопки "Back to Index"
+document.getElementById('backToIndex').addEventListener('click', function() {
+    // Перенаправляем пользователя на index.html
+    window.location.href = 'index.html';
+});
+    </script>
+    
+</body>
+</html>

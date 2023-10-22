@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes up at least the viewport height */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Main Content Styles */
+        main {
+    padding: 50px;
+    flex-grow: 1; /* Allow the main content to grow and take up remaining space */
+    display: flex;
+    justify-content:  center;
+    align-items:  flex-start;
+}
+
+.content {
+    text-align: center;
+}
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        h2 {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        
+        .login-message {
+            background-color: rgba(105, 102, 102, 0.8); /* Полупрозрачный белый фон */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Стиль для текста в сообщении */
+        .login-message-text {
+            font-size: 18px;
+            color: #333;
+        }
+        .brand {
+    margin: 10px 0; /* Увеличьте вертикальные отступы между фразами */
+    font-weight: bold; /* Сделайте текст жирным, чтобы выделить фразы */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Ваш логотип -->
+            <img src="images.png" alt="Логотип">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Sign in</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+        <h2>
+            TEncyclopedia
+            </h2>
+    </header>
+    <main>
+        <!-- Сообщение о необходимости входа -->
+        <div class="content">
+            <div class="content">
+                <h1>Welcome to Our Website</h1>
+                <p>History and Development: Our pages cover the rich history of vehicles, including famous car brands such as <span class="brand">BMW (Bavarian Motor Works):</span> From its earliest days at the beginning of the 20th century, BMW quickly established itself as a manufacturer of high-quality cars with unique designs and outstanding performance. On the pages of our encyclopedia you will find information about key moments in the history of <span class="brand">Mercedes-Benz:</span> Mercedes-Benz is a story of luxury and innovation in the world of automobiles. We will tell you about their first steps, the creation of the first car, and how they became one of the most prestigious brands in the world of cars. You'll also learn about their state-of-the-art eco-friendly designs and electric models. <span class="brand">Volkswagen (Volkswagen):</span> Volkswagen is a brand widely known for its people's cars such as the Volkswagen Beetle and Volkswagen Golf. Our pages provide an overview of the history and development of Volkswagen, their contributions to the automotive industry, as well as current models, including eco-friendly and electric cars. Each of these brands has its own unique history and mark on the history of automobiles. Our materials will give you a better understanding of how these brands have evolved over time and what innovations they have brought to the world of cars.</p>
+            </div>
+        </main>
+    <div class="login-message">
+        <p class="login-message-text">Please sign in to view the content.</p>
+    </div>
+    <footer>
+        &copy; 2023 Your Company Name. All rights reserved.
+    </footer>
+</body>
+</html>
